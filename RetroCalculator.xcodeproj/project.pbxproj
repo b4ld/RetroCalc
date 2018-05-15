@@ -14,6 +14,8 @@
 		4B3707891FD5047900594044 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3707871FD5047900594044 /* LaunchScreen.storyboard */; };
 		4B3707941FD5047900594044 /* RetroCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3707931FD5047900594044 /* RetroCalculatorTests.swift */; };
 		4B37079F1FD5047900594044 /* RetroCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B37079E1FD5047900594044 /* RetroCalculatorUITests.swift */; };
+		4B7E54771FD5C87F00673EFF /* Demonized.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4B7E54761FD5C87E00673EFF /* Demonized.ttf */; };
+		4B7E54791FD5CAFB00673EFF /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4B7E54781FD5CAFB00673EFF /* btn.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		4B37079A1FD5047900594044 /* RetroCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RetroCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B37079E1FD5047900594044 /* RetroCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetroCalculatorUITests.swift; sourceTree = "<group>"; };
 		4B3707A01FD5047900594044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B7E54761FD5C87E00673EFF /* Demonized.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Demonized.ttf; sourceTree = "<group>"; };
+		4B7E54781FD5CAFB00673EFF /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = btn.wav; path = "retro-graphics/btn.wav"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		4B37077D1FD5047800594044 /* RetroCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				4B7E54761FD5C87E00673EFF /* Demonized.ttf */,
+				4B7E54781FD5CAFB00673EFF /* btn.wav */,
 				4B37077E1FD5047900594044 /* AppDelegate.swift */,
 				4B3707801FD5047900594044 /* ViewController.swift */,
 				4B3707821FD5047900594044 /* Main.storyboard */,
@@ -193,7 +199,7 @@
 				TargetAttributes = {
 					4B37077A1FD5047800594044 = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					4B37078E1FD5047900594044 = {
 						CreatedOnToolsVersion = 9.1;
@@ -232,6 +238,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B7E54791FD5CAFB00673EFF /* btn.wav in Resources */,
+				4B7E54771FD5C87F00673EFF /* Demonized.ttf in Resources */,
 				4B3707891FD5047900594044 /* LaunchScreen.storyboard in Resources */,
 				4B3707861FD5047900594044 /* Assets.xcassets in Resources */,
 				4B3707841FD5047900594044 /* Main.storyboard in Resources */,
@@ -426,11 +434,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RetroCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PCdev.RetroCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -440,11 +450,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RetroCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PCdev.RetroCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
